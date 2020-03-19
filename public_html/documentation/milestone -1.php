@@ -6,22 +6,24 @@
 </head>
 <body>
 <li><strong>Purpose:</strong></li>
-<br>To showcase my valuable skills in order to get an internship.
-<li><strong>Audience:</strong></li>
-<br>Potential employers, instructors, and clients.
-<li>Goal:</li>
-<br>To acquire a full-time internship position.
-<br>To increase my current skill set and hourly worth.
-<br>To create a personal portfolio.
-<br>To learn SOPs of a larger company.
-<br>To expand my network.
-<li><strong>Persona:</strong>
-<br>India Byrne
-<br><strong>Age:<strong>26
-			<br><strong>Profession:</strong> Web Development Full Stack Alumni
-<br><strong>Technology:</strong>
-			<br>iOS, Windows 10, Andriod Phone, Home Wifi
+To showcase my valuable skills in order to get an internship.
+<li><strong>Audience:</strong></li>Potential employers, instructors, and clients.
+<li><strong>Goal:</strong></li>
+To acquire a full-time internship position.
+To increase my current skill set and hourly worth.
+To create a personal portfolio.
+To learn SOPs of a larger company.
+To expand my network.
+<li><strong>Persona:</strong></li>India Byrne
+<li><strong>Age:</strong>26</li>
+<strong>Profession:</strong> Web Development Full Stack Alumni
+<li><strong>Technology:</strong></li>
+			iOS, Windows 10, Andriod Phone, Home Wifi
 			<br><strong>Attitudes and Behaviors</strong>
-			<br>
+			<br>New almuni student and somewhat unsure of my skill.
+<li><strong>Fustrations and Behaviors</strong></li>
+Typical fustrations of job hunting in a new field and role.
+<li><strong>User Story:</strong><li>
+As a newly graduated alumi I seek a intership to better develop and guide my skills.
 
 
