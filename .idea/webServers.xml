@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="02235b2b-edf4-464c-b606-0398e4d7a724" name="my pwp india" url="http://bootcamp-coders.cnm.edu/~ibyrne1?my-pwp-india">
-        <fileTransfer host="bootcamp-coders.cnm.edu" port="22" rootFolder="/home/ibyrne/public_html/my-pwp-india/" accessType="SFTP" authAgent="true">
+      <webServer id="02235b2b-edf4-464c-b606-0398e4d7a724" name="my pwp india" url="https://bootcamp-coders.cnm.edu/~ibyrne1/my-pwp-india">
+        <fileTransfer host="bootcamp-coders.cnm.edu" port="22" rootFolder="/home/ibyrne1/public_html/my-pwp-india" accessType="SFTP" authAgent="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
