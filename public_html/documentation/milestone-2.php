@@ -13,7 +13,8 @@ I will need to see if these kinds of animation are within my skill set but "Stev
 3.<a href="https://www.adamhartwig.co.uk/"></a>
 As far as wording I would like my contact information and name to be the first thing seen.
 It is very unquie and that will stick in the mind of my veiwer.
-
+Contact links to Linkedin, Instagram, and Email need to be featured.
+Colors  will have a bright palette.
 <li><strong>About Me:</strong></li>.
 <br>India Byrne
 <br><strong>Age:</strong> 26
