@@ -21,9 +21,12 @@ Colors  will have a bright palette and I want to at least animate my image somew
 <br><strong>Technology:</strong>
 <br>iOS, Windows 10, Andriod Phone, Home Wifi
 <br><strong>Experience:</strong><br>
-<br>I want to show case all of mu current skills as well as my previous works skills as well. I will only be featuring:
+<br>I want to show case all of my current bootcamp skills as well as my previous works skills as well. I will only be featuring:
 <br> Canon, Veritude, Lavu, and Unity BPO.
 <li><strong>Portfolio:</strong></li>
+Seperate Page?
 I will need help with creating this, I don't know which of my assignments besides Capstone and the website itself.
+I do have several photos of me attending current events so maybe some of those?
 <li><strong>Contact:</strong></li>
-Contact links to Linkedin, Instagram, and Email need to be featured. No Facebook
+Seperate Page?
+Contact links to Linkedin, Instagram, GithHub and Email need to be featured. No Facebook!
