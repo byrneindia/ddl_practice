@@ -30,3 +30,4 @@ I do have several photos of me attending current events so maybe some of those?
 <li><strong>Contact:</strong></li>
 Seperate Page?
 Contact links to Linkedin, Instagram, GithHub and Email need to be featured. No Facebook!
+<br><strong>Wireframes:</strong><br>
