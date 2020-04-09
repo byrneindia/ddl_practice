@@ -31,3 +31,7 @@ I do have several photos of me attending current events so maybe some of those?
 Seperate Page?
 Contact links to Linkedin, Instagram, GithHub and Email need to be featured. No Facebook!
 <br><strong>Wireframes:</strong><br>
+<input id="Desktop Wireframes.png" src="Desktop Wireframe.png"
+		 type="Desktop Wireframe.png">
+<input id="Mobile Wireframes.png" src="Mobile Wireframe.png"
+		 type="Mobile Wireframe.png">
