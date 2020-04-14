@@ -20,5 +20,5 @@ To acquire a full-time internship position.
 			<br><strong>Technology:</strong>
 			<br>iOS, Windows 10, Andriod Phone, Home Wifi
 			<br><strong>Attitudes and Behaviors:</strong>
-			<br>
+
 
