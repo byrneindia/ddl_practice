@@ -1,2 +1,17 @@
-<!-- Place your stylesheet here-->
-<link href="/css/stylesheet.css" rel="stylesheet" type="text/css">
+/*<link href="/css/css custom.css" rel="stylesheet" type="text/css">*/
+
+.carousel.vertical .prev.right{
+	top: 0;
+}
+
+.carousel.vertical .active.left{
+	top: -400px;
+}
+
+.carousel.vertical .active.right{
+	top: 400px;
+}
+
+.carousel.vertical .item{
+	left:0;
+}
