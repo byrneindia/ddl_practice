@@ -1,66 +1,49 @@
-$("#nav ul li a[href^='#']").on("click", function (e) {
-	// prevent default anchor click behavior
-	e.preventDefault();
+var delta = 0;
+var scrollThreshold = 5;
 
-	// store hash
-	var hash = this.hash;
+// detect available wheel event
+wheelEvent = "onwheel" in document.createElement("div") ? "wheel" : // Modern browsers support "wheel"
+	document.onmousewheel !== undefined ? "mousewheel" :         // Webkit and IE support at least "mousewheel"
+		"DOMMouseScroll";                                            // let's assume that remaining browsers are older Firefox
 
-	// animate
-	$("html, body").animate(
+// Bind event handler
+$(window).on(wheelEvent, function (e) {
+	// Do nothing if we weren't scrolling the carousel
+	var carousel = $('.carousel.vertical:hover');
+	if (carousel.length === 0)  return;
+
+	// Get the scroll position of the current slide
+	var currentSlide = $(e.target).closest('.item')
+	var scrollPosition = currentSlide.scrollTop();
+
+	// --- Scrolling up ---
+	if (e.originalEvent.detail < 0 || e.originalEvent.deltaY < 0 || e.originalEvent.wheelDelta > 0) {
+		// Do nothing if the current slide is not at the scroll top
+		if(scrollPosition !== 0) return;
+
+		delta--;
+
+		if ( Math.abs(delta) >= scrollThreshold) {
+			delta = 0;
+			carousel.carousel('prev');
+		}
+	}
+
+	// --- Scrolling down ---
+	else {
+		// Do nothing if the current slide is not at the scroll bottom
+		var contentHeight = currentSlide.find('> .content').outerHeight();
+		if(contentHeight > currentSlide.outerHeight() && scrollPosition + currentSlide.outerHeight() !== contentHeight) return;
+
+		delta++;
+		if (delta >= scrollThreshold)
 		{
-			scrollTop: $(hash).offset().top
-		},
-		1000,
-		function () {
-			// when done, add hash to url
-			// (default click behaviour)
-			window.location.hash = hash;
+			delta = 0;
+			carousel.carousel('next');
 		}
-	);
+	}
+
+	// Prevent page from scrolling
+	return false;
 });
 
-$(function () {
-
-	// init the validator
-	// validator files are included in the download package
-	// otherwise download from http://1000hz.github.io/bootstrap-validator
-
-	$('#contact-form').validator();
-
-
-	// when the form is submitted
-	$('#contact-form').on('submit', function (e) {
-
-		// if the validator does not prevent form submit
-		if (!e.isDefaultPrevented()) {
-			var url = "contact.php";
-
-			// POST values in the background the the script URL
-			$.ajax({
-				type: "POST",
-				url: url,
-				data: $(this).serialize(),
-				success: function (data)
-				{
-					// data = JSON object that contact.php returns
-
-					// we recieve the type of the message: success x danger and apply it to the
-					var messageAlert = 'alert-' + data.type;
-					var messageText = data.message;
-
-					// let's compose Bootstrap alert box HTML
-					var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-
-					// If we have messageAlert and messageText
-					if (messageAlert && messageText) {
-						// inject the alert to .messages div in our form
-						$('#contact-form').find('.messages').html(alertBox);
-						// empty the form
-						$('#contact-form')[0].reset();
-					}
-				}
-			});
-			return false;
-		}
-	})
-});
