@@ -1,3 +1,4 @@
+<!--This makes the page scroll-->
 var delta = 0;
 var scrollThreshold = 5;
 
@@ -46,4 +47,6 @@ $(window).on(wheelEvent, function (e) {
 	// Prevent page from scrolling
 	return false;
 });
+<!--Ending-->
+
 
