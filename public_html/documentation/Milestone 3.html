@@ -23,27 +23,20 @@
 
 </head>
 
+
 <!-- Bootstrap core CSS -->
 <link href="css%20custom.css" rel="stylesheet">
 
 <style>
-	body {
-		position: relative;
+
+	body{
+		margin: 0;
 	}
 
-	.affix {
-		top: 0;
-		width: 100%;
-		z-index: 9999 !important;
-	}
 
-	.navbar {
-		margin-bottom: 0px;
-	}
-
-	.affix~.container-fluid {
-		position: relative;
-		top: 50px;
+	.topnav {
+		background-color: #333;
+		overflow: hidden;
 	}
 
 	#about {
@@ -77,10 +70,14 @@
 		color: #fff;
 		background-color: #00bcd4;
 	}
+
+
 </style>
-	<div class="container">
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark border rounded my-3 border border-secondary">
-			<img class="w-25 h-25 cog-lg-1 col-md-1">
+		<div class="container">
+			<div class="topnav"></div>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark my-3 border ">
+			<span class="navbar-brand mb-0 h1">India S. Byrne</span>
+			<img class="w-25 h-25 cog-lg-1 col-md-1" >
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerBemo02"
 				aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -112,8 +109,7 @@
 
 
 <section id="about">
-	<div class="container">
-		<div class="row">
+		<div class="row text-center d-flex">
 			<div class="col-lg-8 mx-auto">
 				<h2>Who am I?</h2>
 				<p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
@@ -125,8 +121,7 @@
 </section>
 
 <section id="venture">
-	<div class="container">
-		<div class="row">
+		<div class="row text-right d-flex">
 			<div class="col-lg-8 mx-auto">
 				<h2>My Ventures</h2>
 				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
@@ -136,8 +131,7 @@
 </section>
 
 <section id="resume">
-	<div class="container">
-		<div class="row">
+		<div class="row text-left d-flex">
 			<div class="col-lg-8 mx-auto">
 				<h2>Experience & Education</h2>
 				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
@@ -147,8 +141,7 @@
 </section>
 
 <section id="contact">
-	<div class="container">
-		<div class="row">
+	<div class="row text-right d-flex">
 			<div class="col-lg-8 mx-auto">
 				<h2>Let's get in touch!</h2>
 				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
