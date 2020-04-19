@@ -17,7 +17,7 @@
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 	<!--css custom-->
-	<link rel="css custom.css">
+	<link rel="Custom.css">
 
 	<!-- Optional JavaScript -->
 
@@ -26,18 +26,24 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="validator.js"></script>"
 	<script src="contact.js"></script>
 </head>
 <!--Ending-->
 
 <!-- Bootstrap core CSS -->
-<link href="custom.css" rel="stylesheet">
+<link href="Custom.css" rel="stylesheet">
 
 <style>
-	body {
+	html, body {
 		margin: 0;
+		box-sizing: border-box;
 	}
+.container {
+	margin: 0 auto;
+	padding: 0 2rem;
+}
 
 	.topnav {
 		background-color: #333;
@@ -53,7 +59,6 @@
 	}
 
 	#venture {
-		column-count: 3;
 		text-align: left;
 		padding-top: 50px;
 		height: 800px;
@@ -70,29 +75,14 @@
 	}
 
 	#contact {
-		text-align: right;
+		text-align: left;
 		padding-top: 50px;
 		height: 800px;
 		color: #fff;
 		background-color: #00bcd4;
 	}
-
-	.g-recaptcha {}
-	.contactWrapper{}
-
-
-	.status {font-size: 15px;
-		color: red;
-		padding: 15px;
-	}
-
-
-
-
 </style>
 <!--Ending-->
-
-</html>
 
 <!--Navagation Bar, really hard.-->
 <div class="container">
@@ -144,16 +134,19 @@
 <section id="venture">
 	<div class="card-deck">
 		<div class="card bg-primary">
+			<img class="card-img-top" src="..." alt="Card image cap">
 			<div class="card-body text-center">
 				<p class="card-text">Some text inside the first card</p>
 			</div>
 		</div>
 		<div class="card bg-warning">
+			<img class="card-img-top" src="..." alt="Card image cap">
 			<div class="card-body text-center">
 				<p class="card-text">Some text inside the second card</p>
 			</div>
 		</div>
 		<div class="card bg-success">
+			<img class="card-img-top" src="..." alt="Card image cap">
 			<div class="card-body text-center">
 				<p class="card-text">Some text inside the third card</p>
 			</div>
@@ -165,21 +158,25 @@
 <section id="resume">
 	<div class="card-deck">
 		<div class="card bg-primary">
+			<img class="card-img-top" src="..." alt="Card image cap">
 			<div class="card-body text-center">
 				<p class="card-text">Some text inside the first card</p>
 			</div>
 		</div>
 		<div class="card bg-warning">
+			<img class="card-img-top" src="..." alt="Card image cap">
 			<div class="card-body text-center">
 				<p class="card-text">Some text inside the second card</p>
 			</div>
 		</div>
 		<div class="card bg-success">
+			<img class="card-img-top" src="..." alt="Card image cap">
 			<div class="card-body text-center">
 				<p class="card-text">Some text inside the third card</p>
 			</div>
 		</div>
 		<div class="card bg-danger">
+			<img class="card-img-top" src="..." alt="Card image cap">
 			<div class="card-body text-center">
 				<p class="card-text">Some text inside the fourth card</p>
 			</div>
@@ -194,47 +191,119 @@
 			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
 	</div>
 		<!--Now starts the look of the contact form.-->
+
 		<!--form-->
-		<div class="contact-wrapper">
+		<form class="form" >
+		<div class="contactWrapper pt-2">
 			<div class="form-wrapper">
 			</div>
-			<div class="container contact-form p-5 text-wrap">
-				<form id="contactMe" action="../php/" method="post">
+			<div class="container rounded text-white p-5 text-wrap">
 					<div class="row">
 						<h3 class="text-center col-12 text-dark"></h3>
 						<div class="col-md-6">
 							<div class="form-group">
-								<input type="text" name="contactName" class="form-control" placeholder="Your Name:" />
+								<input type="text" name="contactName" class="form-control" placeholder="Your Name *"/>
 							</div>
 							<div class="form-group">
-								<input type="text" name="contactEmail" class="form-control" placeholder="Your Email:"/>
+								<input type="text" name="contactEmail" class="form-control" placeholder="Your Email *"/>
 							</div>
 							<div class="form-group">
-								<input type="text" name="contactPhone" class="form-control" placeholder="Phone Number:"/>
+								<input type="text" name="contactPhone" class="form-control" placeholder="Phone Number"/>
 							</div>
-							<div class="form-group" <div class="col-md-6">
-							<div class="form group">
-								<div class="g-recaptcha" data-sitekey="6LfjWakUAAAAALV7C2rV4U-n0ykC3otSs493v7S9"></div>
-							</div>
-						</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<input type="text" name="contactSubject" class="form-control" placeholder="Subject:">
+								<input type="text" name="contactSubject" class="form-control" placeholder="Subject *">
 							</div>
-							<textarea name="contactMessage" class="form-control" placeholder="How may I help?" style="width: 100%; height: 150px;"></textarea>
-							<button type="submit" class="btn btn-primary btn-md my-2">Submit!</button>
+							<textarea name="contactMessage" class="form-control" placeholder="Your Message *"
+										 style="width: 100%; height: 150px;"></textarea>
+							<button type="submit" class="btn btn-primary btn-sm my-2">Submit</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="justify-content-center col-md-10">
 						</div>
 					</div>
 			</div>
-			</form>
-			<div class="status">
-			</div>
 		</div>
-		<div id="output-area"></div>
-	</div>
-	</div>
+
+			<!--Icons-->
+			<style>
+				.fa {
+					padding: 20px;
+					font-size: 30px;
+					width: 50px;
+					text-align: center;
+					text-decoration: none;
+					margin: 5px 2px;
+				}
+
+				.fa:hover {
+					opacity: 0.7;
+				}
+
+				.fa-facebook {
+					background: #3B5998;
+					color: white;
+				}
+
+				.fa-twitter {
+					background: #55ACEE;
+					color: white;
+				}
+
+				.fa-linkedin {
+					background: #007bb5;
+					color: white;
+				}
+
+				.fa-instagram {
+					background: #125688;
+					color: white;
+				}
+
+				.fa-pinterest {
+					background: #cb2027;
+					color: white;
+				}
+
+
+				.fa-skype {
+					background: #00aff0;
+					color: white;
+				}
+
+				.fa-android {
+					background: #a4c639;
+					color: white;
+				}
+
+
+				.fa-vimeo {
+					background: #45bbff;
+					color: white;
+				}
+
+				.fa-rss {
+					background: #ff6600;
+					color: white;
+				}
+			</style>
+
+			<h2></h2>
+
+			<!-- Add font awesome icons -->
+
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-linkedin"></a>
+			<a href="#" class="fa fa-instagram"></a>
+			<a href="#" class="fa fa-pinterest"></a>
+			<a href="#" class="fa fa-skype"></a>
+			<a href="#" class="fa fa-vimeo"></a>
+			<a href="#" class="fa fa-rss"></a>
+
 </section>
+
 <!-- Footer -->
 <footer class="py-5 bg-dark">
 	<div class="container">
