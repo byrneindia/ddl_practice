@@ -33,7 +33,7 @@
 <!--Ending-->
 
 <!-- Bootstrap core CSS -->
-<link href="Custom.css" rel="stylesheet">
+<link href="css/Custom.css" rel="stylesheet">
 
 <style>
 	html, body {
@@ -85,28 +85,37 @@
 <!--Ending-->
 
 <!--Navagation Bar, really hard.-->
-<div class="container">
-	<div class="topnav"></div>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark my-3 border ">
-		<span class="navbar-brand mb-0 h1">India S. Byrne</span>
-		<img class="w-25 h-25 cog-lg-1 col-md-1">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerBemo02" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-			<ul class="navbar-nav ml-auto mt-2 mt-md-0">
-				<li class="nav-item active">
-					<a class="nav-link" href="#about">Who am I? <span class="sr-only">(current)</span></a> </li>
-				<li class="nav-item">
-					<a class="nav-link" href="#venture">Ventures</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#resume">Education and Experience</a>
-				<li class="nav-item"></li>
-				<a class="nav-link" href="#contact">Contact Me!</a>
-			</ul>
-		</div>
-	</nav>
+<nav id="navbar-example2" class="navbar navbar-light bg-light">
+	<a class="navbar-brand" href="#">Navbar</a>
+	<ul class="nav nav-pills">
+		<li class="nav-item">
+			<a class="nav-link" href="#fat">@fat</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#mdo">@mdo</a>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#one">one</a>
+				<a class="dropdown-item" href="#two">two</a>
+				<div role="separator" class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#three">three</a>
+			</div>
+		</li>
+	</ul>
+</nav>
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+	<h4 id="fat">@fat</h4>
+	<p>...</p>
+	<h4 id="mdo">@mdo</h4>
+	<p>...</p>
+	<h4 id="one">one</h4>
+	<p>...</p>
+	<h4 id="two">two</h4>
+	<p>...</p>
+	<h4 id="three">three</h4>
+	<p>...</p>
 </div>
 <!--Ending-->
 
@@ -123,9 +132,10 @@
 	<div class="row text-center d-flex">
 		<div class="col-lg-8 mx-auto">
 			<h2>Who am I?</h2>
-			<p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-			<ul>
-			</ul>
+			<p class="lead">Hello, my name is India and I am Full Stack Web Developer. Born in Detroit, Michagan  but raised and educated in Moriarty, New Mexico, at a young age I had a passion for technology. In early 2004, at ten years old, I set up a successful ebay store for my mother. This was my first introduction to the internet and online sales.
+				Starting with old Gameboys I grew into consoles, then phones before getting my own computer at fifteen. This allowed me to apply for jobs in Albuquerque and eventually become independent. From there I took a job as technical support for Canon in their printer and copier department and I realized my passion for the technology field.
+				Then I was employed with Fidelity in their customer support division before becoming technical support once again at Unity BPO in their medical equipment department. Eventually I was promoted to a technical support trainer and instructor at Lavu. I hope to continue my education and grow my experience as I more deeply explore this field.</p>
+				</ul>
 		</div>
 	</div>
 	</div>
@@ -158,25 +168,25 @@
 <section id="resume">
 	<div class="card-deck">
 		<div class="card bg-primary">
-			<img class="card-img-top" src="Lavu_Logo_Lght.png" alt="Card image cap">
+			<img class="card-img-top" src="images/Lavu_Logo_Lght.png" alt="Card image cap">
 			<div class="card-body text-center">
 				<p class="card-text">Some text inside the first card</p>
 			</div>
 		</div>
 		<div class="card bg-warning">
-			<img class="card-img-top" src="unity-bpo.png" alt="Card image cap">
+			<img class="card-img-top" src="images/unity-bpo.png" alt="Card image cap">
 			<div class="card-body text-center">
 				<p class="card-text">Some text inside the second card</p>
 			</div>
 		</div>
 		<div class="card bg-success">
-			<img class="card-img-top" src="Fidelity-Logo-500x130.png" alt="Card image cap">
+			<img class="card-img-top" src="images/Fidelity-Logo-500x130.png" alt="Card image cap">
 			<div class="card-body text-center">
 				<p class="card-text">Some text inside the third card</p>
 			</div>
 		</div>
 		<div class="card bg-danger">
-			<img class="card-img-top" src="canon-press-centre-canon-logo.png" alt="Card image cap">
+			<img class="card-img-top" src="images/canon-press-centre-canon-logo.png" alt="Card image cap">
 			<div class="card-body text-center">
 				<p class="card-text">Some text inside the fourth card</p>
 			</div>
