@@ -199,35 +199,39 @@
 		<div class="col-lg-8 mx-auto">
 			<h2>Let's get in touch!</h2>
 			<p class="lead">I am always avaliable for a new opportunity! Feel free to check me out on social media as well.</p>
+		</div>
 	</div>
 		<!--Now starts the look of the contact form.-->
+</section>
 
 		<!--form-->
-		<form class="form" >
+		<form class="form" id ="my-contact-form" action ="../php/mailer.php" method = "post">
 		<div class="contactWrapper">
 			<div class="form-wrapper">
-			</div>
 			<div class="container text-white p-5 text-wrap">
 					<div class="row">
 						<h3 class="text-center col-12 text-dark"></h3>
 						<div class="col-md-6">
 							<div class="form-group">
-								<input type="text" name="contactName" class="form-control" placeholder="Your Name:"/>
+								<input type="text" name="contactName" id="contactName" class="form-control" placeholder="Your Name:"/>
 							</div>
 							<div class="form-group">
-								<input type="text" name="contactEmail" class="form-control" placeholder="Your Email:"/>
+								<input type="text" name="contactEmail" id="contactEmail"  class="form-control" placeholder="Your Email:"/>
 							</div>
 							<div class="form-group">
-								<input type="text" name="contactPhone" class="form-control" placeholder="Phone Number"/>
+								<input type="text" name="contactPhone" id="contactPhone"  class="form-control" placeholder="Phone Number"/>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<input type="text" name="contactSubject" class="form-control" placeholder="Subject:">
+								<input type="text" name="contactSubject" id="contactSubject"  class="form-control" placeholder="Subject:">
 							</div>
-							<textarea name="contactMessage" class="form-control" placeholder="How can I help?"
+							<textarea name="contactMessage" id="contactMessage"  class="form-control" placeholder="How can I help?"
 										 style="width: 100%; height: 150px;"></textarea>
-							<button type="submit" class="btn btn-primary btn-md my-2">Submit!</button>
+							<div class="g-recaptcha" data-sitekey="6LcO8OwUAAAAAGxTso3GaUk65h17QlTEI5wQs3k8"></div>
+
+							<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
+							<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
 						</div>
 					</div>
 					<div class="row">
@@ -235,7 +239,16 @@
 						</div>
 					</div>
 			</div>
+			</div>
 		</div>
+		</form>
+	<!--empty area for form error/success output-->
+	<div class="row">
+		<div class="col-xs-12">
+			<div id="output-area"></div>
+		</div>
+	</div>
+		<!--Ending-->
 
 			<!--Icons-->
 			<style>
@@ -313,7 +326,6 @@
 			<a href="#" class="fa fa-vimeo"></a>
 			<a href="#" class="fa fa-rss"></a>
 
-</section>
 
 <!-- Footer -->
 <footer class="py-5 bg-dark">
@@ -325,6 +337,6 @@
 <!--Ending-->
 
 
-</html>
-</body>
 
+</body>
+</html>
