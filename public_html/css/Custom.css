@@ -17,3 +17,51 @@
 	}
 }
 <!--Ending-->
+
+
+html, body {
+	margin: 0;
+	box-sizing: border-box;
+}
+.container {
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+.topnav {
+	background-color: #333;
+	overflow: hidden;
+}
+
+#about {
+	text-align: center;
+	padding-top: 50px;
+	height: 800px;
+	color: #fff;
+	background-color: #1E88E5;
+}
+
+#venture {
+	text-align: left;
+	padding-top: 50px;
+	height: 800px;
+	color: #fff;
+	background-color: #673ab7;
+}
+
+#resume {
+	text-align: right;
+	padding-top: 50px;
+	height: 800px;
+	color: #fff;
+	background-color: #ff9800;
+}
+
+#contact {
+	text-align: center;
+	padding-top: 50px;
+	height: 800px;
+	color: #fff;
+	background-color: #00bcd4;
+}
+
