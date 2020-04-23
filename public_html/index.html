@@ -24,18 +24,21 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
 
 	<!--My CSS-->
+	<link rel="stylesheet" href="Custom.css">
+
 
 	<!-- Your JavaScript Form Validator -->
 	<script src="js/form-validate.js"></script>
 
 	<!-- Google reCAPTCHA -->
 	<script src='https://www.google.com/recaptcha/api.js'></script>
-</head>
-<!--Ending-->
 
+	<!--Ending-->
+
+</head>
 
 <!--Navagation Bar, really hard.-->
-<nav id="navbar-example2" class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-light" style="background-color: white";>
 	<a class="navbar-brand" href="#Who Am I?">India S. Byrne</a>
 	<ul class="nav nav-pills">
 		<li class="nav-item">
@@ -44,100 +47,59 @@
 		<li class="nav-item">
 			<a class="nav-link" href="#My Ventures">My Ventures!</a>
 		</li>
-		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#Education & Experience">Education & Experience </a>
+			<a class="nav-link" href="#Education & Experience">Education & Experience</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link" href="#Contact Me!">Contact Me!</a>
 		</li>
-		<h4 id="Who Am I?"></h4>
-		<p></p>
-		<h4 id="My Ventures!"></h4>
-		<p></p>
-		<h4 id="Education & Experience"></h4>
-		<p></p>
-		<h4 id="Contact Me!"></h4>
-		<p></p>
+		</ul>
+</nav>
+
+		<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
 		</div>
 
 
-<!--All the text you see? It's here.-->
-<div class="container-welcome container">
-	<div class="row text-center d-flex px-5">
-		<div class="col-lg text-wrap">
-		</div>
-	</div>
-</div>
-</div>
+			<section id ="about">
+				<div class = "container">
+					<div class = "row">
+						<div class="col lg-8 mx-auto">
+			<h4 id="Who Am I?">Who Am I?</h4>
+			<p></p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-<section id="about">
-	<div class="row text-center d-flex">
-		<div class="col-lg-8 mx-auto">
-		</div>
-	</div>
-	</div>
-</section>
+			<section id ="ventures">
+				<div class = "container">
+					<div class = "row">
+						<div class="col lg-8 mx-auto">
+			<h4 id="My Ventures">My Ventures</h4>
+			<p></p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-<section id="venture">
-	<div class="card-deck">
-		<div class="card bg-primary">
-			<img class="card-img-top" src="..." alt="Card image cap">
-			<div class="card-body text-center">
-				<p class="card-text">Some text inside the first card</p>
-			</div>
-		</div>
-		<div class="card bg-warning">
-			<img class="card-img-top" src="..." alt="Card image cap">
-			<div class="card-body text-center">
-				<p class="card-text">Some text inside the second card</p>
-			</div>
-		</div>
-		<div class="card bg-success">
-			<img class="card-img-top" src="..." alt="Card image cap">
-			<div class="card-body text-center">
-				<p class="card-text">Some text inside the third card</p>
-			</div>
-		</div>
-		</div>
-	</div>
-</section>
+			<section id ="resume">
+				<div class = "container">
+					<div class = "row">
+						<div class="col lg-8 mx-auto">
+			<h4 id="Education & Experience">Education & Experience</h4>
+			<p></p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-<section id="resume">
-	<div class="card-deck">
-		<div class="card bg-primary">
-			<img class="card-img-top" src="images/Lavu_Logo_Lght.png" alt="Card image cap">
-			<div class="card-body text-center">
-				<p class="card-text">Some text inside the first card</p>
-			</div>
-		</div>
-		<div class="card bg-warning">
-			<img class="card-img-top" src="images/unity-bpo.png" alt="Card image cap">
-			<div class="card-body text-center">
-				<p class="card-text">Some text inside the second card</p>
-			</div>
-		</div>
-		<div class="card bg-success">
-			<img class="card-img-top" src="images/Fidelity-Logo-500x130.png" alt="Card image cap">
-			<div class="card-body text-center">
-				<p class="card-text">Some text inside the third card</p>
-			</div>
-		</div>
-		<div class="card bg-danger">
-			<img class="card-img-top" src="images/canon-press-centre-canon-logo.png" alt="Card image cap">
-			<div class="card-body text-center">
-				<p class="card-text">Some text inside the fourth card</p>
-			</div>
-		</div>
-	</div>
-</section>
+			<section id = "contact me">
+				<div class = "container">
+					<div class = "row">
+						<div class="col lg-8 mx-auto">
+			<h4 id="Contact Me!">Contact Me!</h4>
+			<p></p>
 
-<section id="contact">
-	<div class="row text-center d-flex">
-		<div class="col-lg-8 mx-auto">
-		</div>
-	</div>
-</section>
 
 		<!--form-->
 		<form class="form" id="my-contact-form" action="../php/mailer.php" method="POST">
@@ -183,12 +145,16 @@
 			<div id="output-area"></div>
 		</div>
 	</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		<!--Ending-->
 
-
-<!-- Footer -->
+<!--footer-->
 <footer class="py-5 bg-dark">
 	<div class="container">
+		<p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
 	</div>
 	<!-- /.container -->
 </footer>

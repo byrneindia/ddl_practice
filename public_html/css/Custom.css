@@ -1,67 +1,7 @@
-/* create a responsive container (aka webpage) */
-@media only screen and (min-width: 1200px) {
-	.container {
-		width: 1170px;
-	}
+header {
+	padding: 156px 0 100px;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-	.container {
-		width: 970px;
-	}
+section {
+	padding: 150px 0;
 }
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-	.container {
-		width: 750px;
-	}
-}
-<!--Ending-->
-
-
-html, body {
-	margin: 0;
-	box-sizing: border-box;
-}
-.container {
-	margin: 0 auto;
-	padding: 0 2rem;
-}
-
-.topnav {
-	background-color: #333;
-	overflow: hidden;
-}
-
-#about {
-	text-align: center;
-	padding-top: 50px;
-	height: 800px;
-	color: #fff;
-	background-color: #1E88E5;
-}
-
-#venture {
-	text-align: left;
-	padding-top: 50px;
-	height: 800px;
-	color: #fff;
-	background-color: #673ab7;
-}
-
-#resume {
-	text-align: right;
-	padding-top: 50px;
-	height: 800px;
-	color: #fff;
-	background-color: #ff9800;
-}
-
-#contact {
-	text-align: center;
-	padding-top: 50px;
-	height: 800px;
-	color: #fff;
-	background-color: #00bcd4;
-}
-
