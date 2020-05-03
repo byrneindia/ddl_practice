@@ -1,15 +1,41 @@
 .about{
+	width: auto;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: large;
 	text-align: center;
+	margin: 0 -500%;
+	padding: 0 500%;
 }
 
 .ventures{
+	width: auto;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: large;
 	text-align: center;
+	margin: 0 -500%;
+	padding: 0 500%;
 }
 
 .resume{
+	width: auto;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: large;
 	text-align: center;
+	margin: 0 -500%;
+	padding: 0 500%;
 }
 
 .contact{
+	width: auto;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: large;
 	text-align: center;
+	margin: 0 -500%;
+	padding: 0 500%;
+}
+
+.navbar{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: large;
+
 }
