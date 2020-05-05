@@ -1,5 +1,4 @@
 .about{
-	width: auto;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: large;
 	text-align: center;
@@ -14,11 +13,13 @@
 }
 
 .ventures{
-	width: auto;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: large;
 	text-align: center;
+	padding-left: 0;
+	padding-right: 0;
 }
+
 .kittens{
 	background: #ffb5ba;
 }
@@ -32,7 +33,6 @@
 }
 
 .resume{
-	width: auto;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: large;
 	text-align: center;
@@ -51,24 +51,34 @@ background: #008856;
 background: #9a4eae;
 }
 
-
 .contact{
-	background: #ffb7a5;
-	width: auto;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: large;
 	text-align: center;
+	animation-name: contact;
+	animation-duration: 10s;
 }
+@keyframes contact {
+	0%   {background-color: red;}
+	25%  {background-color: yellow;}
+	50%  {background-color: blue;}
+	100% {background-color: green;}
 
-.navbar {
+
+.nav{
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: large;
 }
 
 h4{
-	padding: 55px 55px;
+	clear:left;
+	text-align:right;
+	width:200px;
+	float:left;
+	padding-bottom:5px;;
 }
 
-.h5{
-	padding: 55px 55px 55px;
+p{
+	margin:60%
 }
+
