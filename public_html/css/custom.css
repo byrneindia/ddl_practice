@@ -18,6 +18,8 @@
 	text-align: center;
 	padding-left: 0;
 	padding-right: 0;
+	background: black;
+
 }
 
 .kittens{
@@ -70,12 +72,7 @@ background: #9a4eae;
 	font-size: large;
 }
 
-
-p{
+.p-5 {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-h4{
-	margin: 0;
-
-}
