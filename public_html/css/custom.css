@@ -4,14 +4,13 @@
 	font-size: large;
 	text-align: center;
 	animation-name: about;
-	animation-duration:4s;
-	margin: 35px 70px;
+	animation-duration:10s;
 }
 @keyframes about {
-	0%   {background-color: #282D4F;}
-	25%  {background-color: #23103A;}
-	50%  {background-color: #A0204C;}
-	100% {background-color: #FF6C00;}
+	0%   {background-color: #6b5b95;}
+	25%  {background-color: #feb236;}
+	50%  {background-color: #d64161;}
+	100% {background-color: #ff7b25;}
 }
 
 .ventures{
@@ -19,6 +18,17 @@
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: large;
 	text-align: center;
+}
+.kittens{
+	background: #ffb5ba;
+}
+
+.pi{
+	background: #be0032;
+}
+
+.drone{
+	background: #f38400;
 }
 
 .resume{
@@ -28,16 +38,37 @@
 	text-align: center;
 }
 
+.canon{
+background: #f3c300;
+}
+.fidelity{
+background: #008856;
+}
+.unity{
+	background:#00a1c2;
+}
+.lavu{
+background: #9a4eae;
+}
+
+
 .contact{
+	background: #ffb7a5;
 	width: auto;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: large;
 	text-align: center;
-
 }
 
-.navbar{
+.navbar {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: large;
+}
 
+h4{
+	padding: 55px 55px;
+}
+
+.h5{
+	padding: 55px 55px 55px;
 }
