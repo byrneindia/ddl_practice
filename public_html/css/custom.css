@@ -70,15 +70,12 @@ background: #9a4eae;
 	font-size: large;
 }
 
-h4{
-	clear:left;
-	text-align:right;
-	width:200px;
-	float:left;
-	padding-bottom:5px;;
-}
 
 p{
-	margin:60%
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
+h4{
+	margin: 0;
+
+}
