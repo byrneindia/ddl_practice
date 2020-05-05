@@ -2,7 +2,7 @@
 	font-size: large;
 	text-align: center;
 	animation-name: about;
-	animation-duration:30s;
+	animation-duration: 20s;
 }
 @keyframes about {
 	0% {background-color: #6b5b95;}
@@ -54,7 +54,7 @@ background: #9a4eae;
 	font-size: large;
 	text-align: center;
 	animation-name: contact;
-	animation-duration: 30s;
+	animation-duration: 20s;
 }
 @keyframes contact {
 	0% {background-color: #72b2c5;}
